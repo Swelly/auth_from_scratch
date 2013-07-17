@@ -6,7 +6,13 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+<<<<<<< HEAD
 gem 'bcrypt-ruby', :require => 'bcrypt'
+=======
+
+# This gives us authentication methods
+gem 'bcrypt-ruby', require: 'bcrypt'
+>>>>>>> 58d94e6e6e6c9f58185301eaed3d3598cb07679f
 
 # Gems used only for assets and not required
 # in production environments by default.

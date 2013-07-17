@@ -1,6 +1,7 @@
 <h1>Sign Up</h1>
 
 <%= form_for @user do |f| %>
+<<<<<<< HEAD
   <% if @user.errors.any? %>
     <div class = "error_messages">
       <h2>Bad Input</h2>
@@ -24,3 +25,27 @@
 
     <%= f.submit %>
 <% end %>
+=======
+
+<% if @user.errors.any? %>
+	<div class="error_messages">
+	<h2>Bad input!</h2>
+	<ul>
+	<% @user.errors.full_messages.each do |msg| %>
+		<li><%= msg %></li>
+	<% end %>
+	</ul>
+	</div>
+<% end %>
+
+<%= f.label :email %>
+<%= f.text_field :email %>
+<%= f.label :password %>
+<%= f.password_field :password %>
+<%= f.label :password_confirmation %>
+<%= f.password_field :password_confirmation%>
+
+<%= f.submit %>
+
+<% end %>
+>>>>>>> 58d94e6e6e6c9f58185301eaed3d3598cb07679f
